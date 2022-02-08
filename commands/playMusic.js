@@ -13,7 +13,7 @@ module.exports = (message, prefix) => {
         }
         
         voiceChannel.join().then(connection => {
-            connectionDispatcher = connection.play("https://coderadio-admin.freecodecamp.org/radio/8010/radio.mp3");
+            connectionDispatcher = connection.play("https://ok.ru/video/4600121335296");
             return message.channel.send("Playing");
         });
     } else if(message.content.startsWith(`${prefix} stop`)) {
