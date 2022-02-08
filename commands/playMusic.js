@@ -13,7 +13,7 @@ module.exports = (message, prefix) => {
         }
         
         voiceChannel.join().then(connection => {
-            connectionDispatcher = connection.play("https://ok.ru/video/4600121335296");
+            connectionDispatcher = connection.play("https://www.rudaw.net/english/onair/radio/live");
             return message.channel.send("Playing");
         });
     } else if(message.content.startsWith(`${prefix} stop`)) {
