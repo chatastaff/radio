@@ -13,7 +13,7 @@ module.exports = (message, prefix) => {
         }
         
         voiceChannel.join().then(connection => {
-            connectionDispatcher = connection.play("https://www.rudaw.net/english/onair/radio/live");
+            connectionDispatcher = connection.play("https://liveonlineradio.net/player/?p=radio-nawa-kurdish");
             return message.channel.send("Playing");
         });
     } else if(message.content.startsWith(`${prefix} stop`)) {
