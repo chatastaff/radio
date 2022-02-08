@@ -13,7 +13,7 @@ module.exports = (message, prefix) => {
         }
         
         voiceChannel.join().then(connection => {
-            connectionDispatcher = connection.play("https://coderadio-admin.freecodecamp.org/radio/93.7/radio.mp3");
+            connectionDispatcher = connection.play("http://streema.com/radios/play/Quran_in_Kurdish");
             return message.channel.send("Playing");
         });
     } else if(message.content.startsWith(`${prefix} stop`)) {
