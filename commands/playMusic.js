@@ -13,7 +13,7 @@ module.exports = (message, prefix) => {
         }
         
         voiceChannel.join().then(connection => {
-            connectionDispatcher = connection.play("http://streema.com/radios/play/Quran_in_Kurdish");
+            connectionDispatcher = connection.play("http://onlineradiobox.com/iq/dengikurdsat/player/?cs=iq.dengikurdsat");
             return message.channel.send("Playing");
         });
     } else if(message.content.startsWith(`${prefix} stop`)) {
